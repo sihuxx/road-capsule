@@ -32,6 +32,18 @@
 | 주차 확인 후 | 기록, 재생, 타임라인 열람 |
 | 다시 움직이면 | 녹음과 재생 즉시 중단 |
 
+## 필요한 설정
+
+1. Android Studio 설치 (Android SDK 포함)
+2. Settings → Languages & Frameworks → Android SDK → SDK Update Sites에 아래 주소 추가
+   ```
+   https://nexus-playground.pleos.ai/repository/raw-releases/connect-avd/2.x/crp-sys-img.xml
+   ```
+3. SDK Platforms에서 Pleos Connect 시스템 이미지 설치
+4. Device Manager → Create Virtual Device → Automotive 선택
+5. 시스템 이미지 "Pleos Connect v2.1.0" 선택, RAM 4GB, Boot option은 Cold boot
+6. 별도 권한이나 계정 설정 없이 실행 가능 (프로토타입은 차량 신호를 사용하지 않음)
+
 ## 실행 방법
 
 1. Android Studio에서 Pleos Connect Emulator 실행
@@ -47,7 +59,7 @@
 
 | 항목 | 내용 |
 | --- | --- |
-| 대상 환경 | Pleos Connect Emulator 2.1.0 (Android API 34 시스템 이미지) |
+| 개발 기준 에뮬레이터 | Pleos Connect Emulator 2.1.0 (Android API 34 시스템 이미지) |
 | 화면 규격 | 1280 x 720, 가로 화면 |
 | 최소 지원 | Android 9 (API 28) |
 | 패키지 이름 | com.roadcapsule.app |
